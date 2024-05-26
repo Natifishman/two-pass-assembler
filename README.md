@@ -1,8 +1,8 @@
-# OpenU_Assembler
+# C_Aseembler
 2-PASS Assembler, wrriten in C language based on mastering bit-field methods, memory management and division into many functions and files.
 
 
-Project file’s guid:
+Project file’s gui:
 
 assembler.c - the file that contain’s the main function,
 “executePasses” that run’s the entire project.
