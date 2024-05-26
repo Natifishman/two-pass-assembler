@@ -57,11 +57,11 @@ Copy code
 ./assembler <source-file>
 Replace <source-file> with the path to your assembly source file.
 
-Usage
+Usage:
 Compile the Project: Ensure all source files are compiled by running make.
-Run the Assembler: Execute the assembler with your assembly file as an argument.
-Output: The assembler will generate output files containing the machine code.
-Contributing
+Run the Assembler:   Execute the assembler with your assembly file as an argument.
+Output:              The assembler will generate output files containing the machine code.
+
 Contributions are welcome! Please fork the repository and submit pull requests.
 
 The assembler was built as a final project in a laboratory course in system programming in the C language
