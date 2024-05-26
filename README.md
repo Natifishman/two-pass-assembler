@@ -64,10 +64,4 @@ Output: The assembler will generate output files containing the machine code.
 Contributing
 Contributions are welcome! Please fork the repository and submit pull requests.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contact
-For any questions or feedback, please open an issue on the repository.
-
-Thank you for using C_Assembler!
+The assembler was built as a final project in a laboratory course in system programming in the C language
