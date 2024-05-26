@@ -1,8 +1,6 @@
 # C_Assembler
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
-![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 ## Overview
 
