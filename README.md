@@ -1,28 +1,75 @@
-# C_Aseembler
-2-PASS Assembler, wrriten in C language based on mastering bit-field methods, memory management and division into many functions and files.
+# C_Assembler
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Language](https://img.shields.io/badge/language-C-blue.svg)
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-Project file’s gui:
+## Overview
 
-assembler.c - the file that contain’s the main function,
-“executePasses” that run’s the entire project.
+**C_Assembler** is a two-pass assembler written in C, designed to master bit-field methods, memory management, and modular programming. This project reads assembly code and generates machine code by executing two passes over the input source files.
 
-assemblerHelper.c & assemblerHelper.h  - the file that contains the functions that check the argument line, and the loops that go trough the first and the second pass.
+## Features
 
-dataStructure.c & dataStructure.h - the file’s that contains the line and label struct’s, their flags
-and the function’s that initialize them.
+- Two-pass assembly process
+- Efficient memory management
+- Modular design with multiple functions and files
+- Comprehensive error checking and reporting
 
-reservedWords.c & reservedWords.h - the file’s that contains all the function’s and array’s that help to find out line attribute’s by their reserved word- such as their  opcode, num Of Arguments, type of argument etc..
+## File Structure
 
+### Main Files
 
-strHandle.c & strHandle.h - the files that contains 
-all the parsing functions.
+- **assembler.c**: Contains the `main` function and the `executePasses` function that runs the entire project.
 
-firstPass.c & firstPass.h - the file’s that control’s the first pass loop and calls the relevant function’s.
- 
-secondPassHelper.c & secondPassHelper.h - the file’s that contains all second pass function’s that are called from assemblerHelper.c .
+### Helper Files
 
-outputPrint.c & outputPrint.h - the file’s that contain all printing function’s for every line type and resposible for creating the output file’s.
+- **assemblerHelper.c / assemblerHelper.h**: Functions for argument checking and loops for the first and second passes.
+- **dataStructure.c / dataStructure.h**: Defines the line and label structs, their flags, and initialization functions.
+- **reservedWords.c / reservedWords.h**: Functions and arrays for identifying line attributes based on reserved words, such as opcode, number of arguments, and argument types.
+- **strHandle.c / strHandle.h**: Parsing functions.
+- **firstPass.c / firstPass.h**: Controls the first pass loop and calls relevant functions.
+- **secondPassHelper.c / secondPassHelper.h**: Functions for the second pass, called from `assemblerHelper.c`.
+- **outputPrint.c / outputPrint.h**: Printing functions for every line type and responsible for creating the output files.
 
+### Auxiliary Files
 
+- **makefile**: Build configuration file.
 
+### Object Files
+
+- **.o files**: Compiled object files for each corresponding source file.
+
+## Getting Started
+
+### Prerequisites
+
+- C Compiler (e.g., `gcc`)
+
+### Building the Project
+
+To build the project, use the provided `makefile`. Run the following command in the terminal:
+
+```sh
+make
+Running the Assembler
+To run the assembler, use the following command:
+
+sh
+Copy code
+./assembler <source-file>
+Replace <source-file> with the path to your assembly source file.
+
+Usage
+Compile the Project: Ensure all source files are compiled by running make.
+Run the Assembler: Execute the assembler with your assembly file as an argument.
+Output: The assembler will generate output files containing the machine code.
+Contributing
+Contributions are welcome! Please fork the repository and submit pull requests.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+For any questions or feedback, please open an issue on the repository.
+
+Thank you for using C_Assembler!
