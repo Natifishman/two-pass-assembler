@@ -1,8 +1,6 @@
 # C_Assembler
 
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
-
-## Final Grade
 ![Final Grade](https://img.shields.io/badge/grade-95-brightgreen.svg)
 ## Overview
 
