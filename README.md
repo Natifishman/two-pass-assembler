@@ -1,8 +1,9 @@
 # C_Assembler
 
 ![Final Grade](https://img.shields.io/badge/grade-95-brightgreen.svg)
-![Subject](https://img.shields.io/badge/subject-laboratory_in_system_programming-grey.svg)
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
+
+![Subject](https://img.shields.io/badge/subject-laboratory_in_system_programming-lightgrey.svg)
 ## Overview
 
 **C_Assembler** is a two-pass assembler written in C, designed to master bit-field methods, memory management, and modular programming. This project reads assembly code and generates machine code by executing two passes over the input source files.
