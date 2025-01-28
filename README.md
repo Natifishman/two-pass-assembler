@@ -58,16 +58,16 @@ Copy code
 ./assembler <source-file>
 Replace <source-file> with the path to your assembly source file.
 
-- **.o files**: Compiled object files for each corresponding source file.  
-  ⚠️ These files are automatically generated during compilation and should not be manually included in the repository.  
-  ✅ Use `make clean` to remove them when needed.
-- To remove object files (.o) and other temporary files, run:
-make clean
-
 Usage:
 Compile the Project: Ensure all source files are compiled by running make.
 Run the Assembler:   Execute the assembler with your assembly file as an argument.
 Output:              The assembler will generate output files containing the machine code.
+
+- **.o files**: Compiled object files for each corresponding source file.  
+  These files are automatically generated during compilation and should not be manually included in the repository.  
+  Use `make clean` to remove them when needed.
+- To remove object files (.o) and other temporary files, run:
+  make clean
 
 Contributions are welcome! Please fork the repository and submit pull requests.
 
