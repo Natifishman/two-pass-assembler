@@ -68,6 +68,7 @@ Output:              The assembler will generate output files containing the mac
   Use `make clean` to remove them when needed.
 - To remove object files (.o) and other temporary files, run:
   make clean
+```
 
 Contributions are welcome! Please fork the repository and submit pull requests.
 
