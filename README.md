@@ -1,75 +1,112 @@
-# C_Assembler
-
+# C Assembler
 ![Final Grade](https://img.shields.io/badge/grade-95-brightgreen.svg)
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
-## Overview
 ![Course](https://img.shields.io/badge/course-systems_programming_laboratory-lightgrey.svg)
 
-**C_Assembler** is a two-pass assembler written in C, designed to master bit-field methods, memory management, and modular programming. This project reads assembly code and generates machine code by executing two passes over the input source files.
+## Overview
+**C Assembler** is a two-pass assembler written in C, designed as a comprehensive systems programming project. It demonstrates mastery of bit-field methods, dynamic memory management, and modular programming architecture. The assembler processes assembly language source files and generates corresponding machine code through a sophisticated two-pass compilation process.
 
-## Features
+## Key Features
+- **Two-Pass Architecture**: Implements a complete two-pass assembly algorithm for symbol resolution
+- **Memory Management**: Efficient dynamic memory allocation and deallocation
+- **Modular Design**: Clean separation of concerns across multiple source files
+- **Robust Error Handling**: Comprehensive syntax and semantic error detection
+- **Standards Compliant**: Written in standard C with portable code practices
 
-- Two-pass assembly process
-- Efficient memory management
-- Modular design with multiple functions and files
-- Comprehensive error checking and reporting
+## Architecture & File Structure
 
-## File Structure
+### Core Components
+- **assembler.c**: Main entry point containing `main()` and `executePasses()` orchestration
+- **assemblerHelper.c/.h**: Argument validation and pass control logic
+- **dataStructure.c/.h**: Core data structures (line/label structs) and initialization routines
 
-### Main Files
+### Processing Modules
+- **firstPass.c/.h**: First pass implementation handling symbol table construction
+- **secondPassHelper.c/.h**: Second pass logic for code generation and symbol resolution
+- **reservedWords.c/.h**: Assembly language keyword recognition and instruction parsing
+- **strHandle.c/.h**: String manipulation and parsing utilities
 
-- **assembler.c**: Contains the `main` function and the `executePasses` function that runs the entire project.
+### Output Generation
+- **outputPrint.c/.h**: Machine code generation and output file creation
 
-### Helper Files
+### Build System
+- **makefile**: Automated build configuration with dependency management
 
-- **assemblerHelper.c / assemblerHelper.h**: Functions for argument checking and loops for the first and second passes.
-- **dataStructure.c / dataStructure.h**: Defines the line and label structs, their flags, and initialization functions.
-- **reservedWords.c / reservedWords.h**: Functions and arrays for identifying line attributes based on reserved words, such as opcode, number of arguments, and argument types.
-- **strHandle.c / strHandle.h**: Parsing functions.
-- **firstPass.c / firstPass.h**: Controls the first pass loop and calls relevant functions.
-- **secondPassHelper.c / secondPassHelper.h**: Functions for the second pass, called from `assemblerHelper.c`.
-- **outputPrint.c / outputPrint.h**: Printing functions for every line type and responsible for creating the output files.
-
-### Auxiliary Files
-
-- **makefile**: Build configuration file.
-
-### Object Files
-
-- **.o files**: Compiled object files for each corresponding source file.
-
-## Getting Started
+## Installation & Usage
 
 ### Prerequisites
+- GCC compiler (or compatible C compiler)
+- Make utility
+- POSIX-compliant system (Linux/Unix/macOS)
 
-- C Compiler (e.g., `gcc`)
+### Building
+```bash
+# Clone the repository
+git clone <repository-url>
+cd C_Assembler
 
-### Building the Project
-
-To build the project, use the provided `makefile`. Run the following command in the terminal:
-
-```sh
+# Compile the project
 make
-Running the Assembler
-To run the assembler, use the following command:
 
-sh
-Copy code
-./assembler <source-file>
-Replace <source-file> with the path to your assembly source file.
-
-Usage:
-Compile the Project: Ensure all source files are compiled by running make.
-Run the Assembler:   Execute the assembler with your assembly file as an argument.
-Output:              The assembler will generate output files containing the machine code.
-
-- **.o files**: Compiled object files for each corresponding source file.  
-  These files are automatically generated during compilation and should not be manually included in the repository.  
-  Use `make clean` to remove them when needed.
-- To remove object files (.o) and other temporary files, run:
-  make clean
+# Clean build artifacts (optional)
+make clean
 ```
 
-Contributions are welcome! Please fork the repository and submit pull requests.
+### Running the Assembler
+```bash
+# Basic usage
+./assembler source_file.as
 
-The assembler was built as a final project in a laboratory course in system programming in the C language
+# Example with multiple files
+./assembler prog1.as prog2.as prog3.as
+```
+
+### Input/Output
+- **Input**: Assembly source files with `.as` extension
+- **Output**: Generated files include:
+  - `.ob` - Object file (machine code)
+  - `.ext` - External symbols file
+  - `.ent` - Entry symbols file
+
+## Assembly Language Support
+The assembler supports a custom assembly language instruction set including:
+- Data manipulation instructions
+- Control flow operations
+- Memory addressing modes
+- Symbol definitions and references
+- Directive handling (`.data`, `.string`, `.entry`, `.extern`)
+
+## Error Handling
+Comprehensive error detection including:
+- Syntax errors (invalid instruction format)
+- Semantic errors (undefined symbols, duplicate labels)
+- Memory allocation failures
+- File I/O errors
+- Invalid command-line arguments
+
+## Development Notes
+This project was developed as the final assignment for a Systems Programming Laboratory course, focusing on:
+- Low-level programming concepts
+- Assembly language processing
+- File I/O operations
+- Data structure design
+- Modular programming practices
+
+## Project Statistics
+- **Final Grade**: 95/100
+- **Language**: C
+- **Architecture**: Modular, multi-file design
+- **Compilation**: Standard makefile with dependency tracking
+
+## Contributing
+Contributions are welcome! Please follow these guidelines:
+1. Fork the repository
+2. Create a feature branch
+3. Implement changes with appropriate tests
+4. Submit a pull request with detailed description
+
+## License
+This project is part of academic coursework. Please respect academic integrity policies when referencing or using this code.
+
+---
+*Built with precision and attention to detail as a demonstration of systems programming mastery.*
