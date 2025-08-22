@@ -1,7 +1,9 @@
-# C Assembler
-![Final Grade](https://img.shields.io/badge/grade-95-brightgreen.svg)
-![Language](https://img.shields.io/badge/language-C-blue.svg)
-![Course](https://img.shields.io/badge/course-systems_programming_laboratory-lightgrey.svg)
+<p align="center">
+  <img src="assets/c-assembler-readme.png" alt="C Assembler Overview" width="600"><br>
+  <img src="https://img.shields.io/badge/course-systems_programming_laboratory-lightgrey.svg">
+  <img src="https://img.shields.io/badge/language-C-lightgrey.svg">
+  <img src="https://img.shields.io/badge/grade-95-blue.svg">
+</p>
 
 ## Overview
 **C Assembler** is a two-pass assembler written in C, designed as a comprehensive systems programming project. It demonstrates mastery of bit-field methods, dynamic memory management, and modular programming architecture. The assembler processes assembly language source files and generates corresponding machine code through a sophisticated two-pass compilation process.
