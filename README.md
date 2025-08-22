@@ -1,5 +1,5 @@
+![App Showcase](assets/c-assembler-readme.png)
 <p align="center">
-  <img src="assets/c-assembler-readme.png" alt="C Assembler Overview" width="600"><br>
   <img src="https://img.shields.io/badge/course-systems_programming_laboratory-lightgrey.svg">
   <img src="https://img.shields.io/badge/language-C-lightgrey.svg">
   <img src="https://img.shields.io/badge/grade-95-blue.svg">
